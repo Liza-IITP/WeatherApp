@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="weather-app-img/images/weather.png" type="image/png">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input id="city" type="text" placeholder="enter city name" spellcheck="false">
+            <button id="search"><img src="weather-app-img/images/search.png" alt="Search"></button>
+        </div>
+        <!-- Place this below the .search div in your card -->
+        <div id="error-message"
+            style="color:#d32f2f; font-size:1rem; min-height:1.5em; text-align:left; margin: 8px 0 0 8px;"></div>
+        <div class="weather">
+            <img src="weather-app-img/images/mist.png" alt="Weather Icon" class="weather-icon">
+
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">City</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="weather-app-img/images/humidity.png" alt="Humidity Icon">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p style="font-family: cursive; font-weight: 700;">Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="weather-app-img/images/wind.png" alt="Wind Icon">
+                    <div>
+                        <p class="wind">10 km/h</p>
+                        <p style="font-family: cursive; font-weight: 700;">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
